@@ -1,18 +1,28 @@
 {
-  "version": 1,
+  "version": 2,
   "schema_version": 1,
   "updated_at": "2026-08-07T00:00:00Z",
   "_comment": "初版。すべてのエントリは verified:false であり、リリース前に人間による確認が必須。詳細は docs/cancel-url-database.md を参照。",
-
   "services": [
     {
       "id": "netflix",
-      "names": { "en": "Netflix", "ja": "Netflix", "zh": "Netflix" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Netflix",
+        "ja": "Netflix",
+        "zh": "Netflix"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://www.netflix.com/cancelplan",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["netflix", "ネットフリックス", "网飞", "奈飞"],
+      "keywords": [
+        "netflix",
+        "ネットフリックス",
+        "网飞",
+        "奈飞"
+      ],
       "icon": "netflix",
       "verified": false,
       "last_checked": null,
@@ -20,12 +30,21 @@
     },
     {
       "id": "spotify",
-      "names": { "en": "Spotify Premium", "ja": "Spotify Premium", "zh": "Spotify Premium" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Spotify Premium",
+        "ja": "Spotify Premium",
+        "zh": "Spotify Premium"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://www.spotify.com/account/subscription/",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["spotify", "スポティファイ"],
+      "keywords": [
+        "spotify",
+        "スポティファイ"
+      ],
       "icon": "spotify",
       "verified": false,
       "last_checked": null,
@@ -33,12 +52,25 @@
     },
     {
       "id": "disney_plus",
-      "names": { "en": "Disney+", "ja": "ディズニープラス", "zh": "Disney+" },
-      "regions": ["GLOBAL", "JP", "US"],
+      "names": {
+        "en": "Disney+",
+        "ja": "ディズニープラス",
+        "zh": "Disney+"
+      },
+      "regions": [
+        "GLOBAL",
+        "JP",
+        "US"
+      ],
       "cancel_url": "https://www.disneyplus.com/account/subscription",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["disney+", "disneyplus", "ディズニープラス", "迪士尼"],
+      "keywords": [
+        "disney+",
+        "disneyplus",
+        "ディズニープラス",
+        "迪士尼"
+      ],
       "icon": "disney_plus",
       "verified": false,
       "last_checked": null,
@@ -46,12 +78,24 @@
     },
     {
       "id": "adobe_cc",
-      "names": { "en": "Adobe Creative Cloud", "ja": "Adobe Creative Cloud", "zh": "Adobe Creative Cloud" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Adobe Creative Cloud",
+        "ja": "Adobe Creative Cloud",
+        "zh": "Adobe Creative Cloud"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://account.adobe.com/plans",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["adobe", "creative cloud", "アドビ", "photoshop", "illustrator"],
+      "keywords": [
+        "adobe",
+        "creative cloud",
+        "アドビ",
+        "photoshop",
+        "illustrator"
+      ],
       "icon": "adobe",
       "verified": false,
       "last_checked": null,
@@ -64,11 +108,17 @@
         "ja": "Google Play の定期購入",
         "zh": "Google Play 订阅"
       },
-      "regions": ["GLOBAL"],
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://play.google.com/store/account/subscriptions",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["google play", "play ストア", "定期購入"],
+      "keywords": [
+        "google play",
+        "play ストア",
+        "定期購入"
+      ],
       "icon": "google_play",
       "verified": false,
       "last_checked": null,
@@ -76,12 +126,22 @@
     },
     {
       "id": "youtube_premium",
-      "names": { "en": "YouTube Premium", "ja": "YouTube Premium", "zh": "YouTube Premium" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "YouTube Premium",
+        "ja": "YouTube Premium",
+        "zh": "YouTube Premium"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://www.youtube.com/paid_memberships",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["youtube premium", "youtube music", "ユーチューブ"],
+      "keywords": [
+        "youtube premium",
+        "youtube music",
+        "ユーチューブ"
+      ],
       "icon": "youtube",
       "verified": false,
       "last_checked": null,
@@ -89,12 +149,21 @@
     },
     {
       "id": "google_one",
-      "names": { "en": "Google One", "ja": "Google One", "zh": "Google One" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Google One",
+        "ja": "Google One",
+        "zh": "Google One"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://one.google.com/settings",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["google one", "グーグルワン"],
+      "keywords": [
+        "google one",
+        "グーグルワン"
+      ],
       "icon": "google_one",
       "verified": false,
       "last_checked": null,
@@ -102,12 +171,22 @@
     },
     {
       "id": "amazon_prime_jp",
-      "names": { "en": "Amazon Prime (Japan)", "ja": "Amazonプライム", "zh": "Amazon Prime (日本)" },
-      "regions": ["JP"],
+      "names": {
+        "en": "Amazon Prime (Japan)",
+        "ja": "Amazonプライム",
+        "zh": "Amazon Prime (日本)"
+      },
+      "regions": [
+        "JP"
+      ],
       "cancel_url": "https://www.amazon.co.jp/gp/primecentral",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["amazon prime", "アマゾンプライム", "プライム会員"],
+      "keywords": [
+        "amazon prime",
+        "アマゾンプライム",
+        "プライム会員"
+      ],
       "icon": "amazon",
       "verified": false,
       "last_checked": null,
@@ -115,12 +194,20 @@
     },
     {
       "id": "amazon_prime_us",
-      "names": { "en": "Amazon Prime", "ja": "Amazonプライム（米国）", "zh": "Amazon Prime" },
-      "regions": ["US"],
+      "names": {
+        "en": "Amazon Prime",
+        "ja": "Amazonプライム（米国）",
+        "zh": "Amazon Prime"
+      },
+      "regions": [
+        "US"
+      ],
       "cancel_url": "https://www.amazon.com/gp/primecentral",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["amazon prime"],
+      "keywords": [
+        "amazon prime"
+      ],
       "icon": "amazon",
       "verified": false,
       "last_checked": null,
@@ -128,12 +215,22 @@
     },
     {
       "id": "microsoft_365",
-      "names": { "en": "Microsoft 365", "ja": "Microsoft 365", "zh": "Microsoft 365" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Microsoft 365",
+        "ja": "Microsoft 365",
+        "zh": "Microsoft 365"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://account.microsoft.com/services",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["microsoft 365", "office 365", "オフィス"],
+      "keywords": [
+        "microsoft 365",
+        "office 365",
+        "オフィス"
+      ],
       "icon": "microsoft",
       "verified": false,
       "last_checked": null,
@@ -141,12 +238,21 @@
     },
     {
       "id": "dropbox",
-      "names": { "en": "Dropbox", "ja": "Dropbox", "zh": "Dropbox" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Dropbox",
+        "ja": "Dropbox",
+        "zh": "Dropbox"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://www.dropbox.com/account/plan",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["dropbox", "ドロップボックス"],
+      "keywords": [
+        "dropbox",
+        "ドロップボックス"
+      ],
       "icon": "dropbox",
       "verified": false,
       "last_checked": null,
@@ -154,30 +260,63 @@
     },
     {
       "id": "canva",
-      "names": { "en": "Canva Pro", "ja": "Canva Pro", "zh": "Canva Pro" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Canva Pro",
+        "ja": "Canva Pro",
+        "zh": "Canva Pro"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": "https://www.canva.com/settings/billing-and-plans",
       "cancel_url_overrides": {},
       "manual_steps": null,
-      "keywords": ["canva", "キャンバ"],
+      "keywords": [
+        "canva",
+        "キャンバ"
+      ],
       "icon": "canva",
       "verified": false,
       "last_checked": null,
       "notes": "無料トライアルからの自動移行が多く、優先度の高いサービス。"
     },
-
     {
       "id": "u_next",
-      "names": { "en": "U-NEXT", "ja": "U-NEXT", "zh": "U-NEXT" },
-      "regions": ["JP"],
+      "names": {
+        "en": "U-NEXT",
+        "ja": "U-NEXT",
+        "zh": "U-NEXT"
+      },
+      "regions": [
+        "JP"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["U-NEXT にログイン", "メニュー →「アカウント・契約」", "「契約内容の確認・解約」", "月額プランの解約手続きへ進む"],
-        "en": ["Sign in to U-NEXT", "Menu → Account & Contract", "Check / cancel contract", "Proceed to cancel the monthly plan"],
-        "zh": ["登录 U-NEXT", "菜单 →「账号・合约」", "「查看合约・取消」", "进入月度套餐取消流程"]
+        "ja": [
+          "U-NEXT にログイン",
+          "メニュー →「アカウント・契約」",
+          "「契約内容の確認・解約」",
+          "月額プランの解約手続きへ進む"
+        ],
+        "en": [
+          "Sign in to U-NEXT",
+          "Menu → Account & Contract",
+          "Check / cancel contract",
+          "Proceed to cancel the monthly plan"
+        ],
+        "zh": [
+          "登录 U-NEXT",
+          "菜单 →「账号・合约」",
+          "「查看合约・取消」",
+          "进入月度套餐取消流程"
+        ]
       },
-      "keywords": ["u-next", "unext", "ユーネクスト"],
+      "keywords": [
+        "u-next",
+        "unext",
+        "ユーネクスト"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -185,16 +324,37 @@
     },
     {
       "id": "hulu_jp",
-      "names": { "en": "Hulu Japan", "ja": "Hulu（日本）", "zh": "Hulu 日本" },
-      "regions": ["JP"],
+      "names": {
+        "en": "Hulu Japan",
+        "ja": "Hulu（日本）",
+        "zh": "Hulu 日本"
+      },
+      "regions": [
+        "JP"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["Hulu にログイン", "「アカウント」→「契約情報」", "「解約する」を選択"],
-        "en": ["Sign in to Hulu Japan", "Account → Subscription", "Select Cancel"],
-        "zh": ["登录 Hulu 日本", "「账号」→「合约信息」", "选择「取消」"]
+        "ja": [
+          "Hulu にログイン",
+          "「アカウント」→「契約情報」",
+          "「解約する」を選択"
+        ],
+        "en": [
+          "Sign in to Hulu Japan",
+          "Account → Subscription",
+          "Select Cancel"
+        ],
+        "zh": [
+          "登录 Hulu 日本",
+          "「账号」→「合约信息」",
+          "选择「取消」"
+        ]
       },
-      "keywords": ["hulu", "フールー"],
+      "keywords": [
+        "hulu",
+        "フールー"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -202,16 +362,41 @@
     },
     {
       "id": "dazn",
-      "names": { "en": "DAZN", "ja": "DAZN", "zh": "DAZN" },
-      "regions": ["JP", "GLOBAL"],
+      "names": {
+        "en": "DAZN",
+        "ja": "DAZN",
+        "zh": "DAZN"
+      },
+      "regions": [
+        "JP",
+        "GLOBAL"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["DAZN にログイン", "「マイ・アカウント」", "「プランの変更・退会」", "退会手続きへ進む"],
-        "en": ["Sign in to DAZN", "My Account", "Change plan / Cancel", "Proceed to cancel"],
-        "zh": ["登录 DAZN", "「我的账号」", "「更改套餐・退出」", "进入退出流程"]
+        "ja": [
+          "DAZN にログイン",
+          "「マイ・アカウント」",
+          "「プランの変更・退会」",
+          "退会手続きへ進む"
+        ],
+        "en": [
+          "Sign in to DAZN",
+          "My Account",
+          "Change plan / Cancel",
+          "Proceed to cancel"
+        ],
+        "zh": [
+          "登录 DAZN",
+          "「我的账号」",
+          "「更改套餐・退出」",
+          "进入退出流程"
+        ]
       },
-      "keywords": ["dazn", "ダゾーン"],
+      "keywords": [
+        "dazn",
+        "ダゾーン"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -219,16 +404,37 @@
     },
     {
       "id": "abema_premium",
-      "names": { "en": "ABEMA Premium", "ja": "ABEMAプレミアム", "zh": "ABEMA Premium" },
-      "regions": ["JP"],
+      "names": {
+        "en": "ABEMA Premium",
+        "ja": "ABEMAプレミアム",
+        "zh": "ABEMA Premium"
+      },
+      "regions": [
+        "JP"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["ABEMA アプリを開く", "「マイページ」→「ご利用プラン」", "「プランを解約する」"],
-        "en": ["Open the ABEMA app", "My Page → Current plan", "Cancel plan"],
-        "zh": ["打开 ABEMA 应用", "「我的」→「当前套餐」", "「取消套餐」"]
+        "ja": [
+          "ABEMA アプリを開く",
+          "「マイページ」→「ご利用プラン」",
+          "「プランを解約する」"
+        ],
+        "en": [
+          "Open the ABEMA app",
+          "My Page → Current plan",
+          "Cancel plan"
+        ],
+        "zh": [
+          "打开 ABEMA 应用",
+          "「我的」→「当前套餐」",
+          "「取消套餐」"
+        ]
       },
-      "keywords": ["abema", "アベマ"],
+      "keywords": [
+        "abema",
+        "アベマ"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -236,16 +442,38 @@
     },
     {
       "id": "danime",
-      "names": { "en": "d Anime Store", "ja": "dアニメストア", "zh": "d Anime Store" },
-      "regions": ["JP"],
+      "names": {
+        "en": "d Anime Store",
+        "ja": "dアニメストア",
+        "zh": "d Anime Store"
+      },
+      "regions": [
+        "JP"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["dアニメストアにログイン", "「解約」メニューへ", "手続きを進める"],
-        "en": ["Sign in to d Anime Store", "Go to the cancellation menu", "Follow the steps"],
-        "zh": ["登录 d Anime Store", "进入「取消」菜单", "按步骤操作"]
+        "ja": [
+          "dアニメストアにログイン",
+          "「解約」メニューへ",
+          "手続きを進める"
+        ],
+        "en": [
+          "Sign in to d Anime Store",
+          "Go to the cancellation menu",
+          "Follow the steps"
+        ],
+        "zh": [
+          "登录 d Anime Store",
+          "进入「取消」菜单",
+          "按步骤操作"
+        ]
       },
-      "keywords": ["dアニメ", "dアニメストア", "danime"],
+      "keywords": [
+        "dアニメ",
+        "dアニメストア",
+        "danime"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -253,16 +481,38 @@
     },
     {
       "id": "nintendo_switch_online",
-      "names": { "en": "Nintendo Switch Online", "ja": "Nintendo Switch Online", "zh": "Nintendo Switch Online" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Nintendo Switch Online",
+        "ja": "Nintendo Switch Online",
+        "zh": "Nintendo Switch Online"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["ニンテンドーアカウントにログイン", "「ショップメニュー」→「継続購入の管理」", "自動更新をオフにする"],
-        "en": ["Sign in to your Nintendo Account", "Shop Menu → Subscriptions", "Turn off automatic renewal"],
-        "zh": ["登录任天堂账号", "「商店菜单」→「订阅管理」", "关闭自动续费"]
+        "ja": [
+          "ニンテンドーアカウントにログイン",
+          "「ショップメニュー」→「継続購入の管理」",
+          "自動更新をオフにする"
+        ],
+        "en": [
+          "Sign in to your Nintendo Account",
+          "Shop Menu → Subscriptions",
+          "Turn off automatic renewal"
+        ],
+        "zh": [
+          "登录任天堂账号",
+          "「商店菜单」→「订阅管理」",
+          "关闭自动续费"
+        ]
       },
-      "keywords": ["nintendo switch online", "ニンテンドー", "任天堂"],
+      "keywords": [
+        "nintendo switch online",
+        "ニンテンドー",
+        "任天堂"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -270,16 +520,42 @@
     },
     {
       "id": "apple_subscriptions",
-      "names": { "en": "Apple subscriptions", "ja": "Appleのサブスクリプション", "zh": "Apple 订阅" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Apple subscriptions",
+        "ja": "Appleのサブスクリプション",
+        "zh": "Apple 订阅"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["iPhone / iPad の「設定」を開く", "最上部の自分の名前をタップ", "「サブスクリプション」", "対象を選んで「サブスクリプションをキャンセル」"],
-        "en": ["Open Settings on your iPhone / iPad", "Tap your name at the top", "Subscriptions", "Select the item and Cancel Subscription"],
-        "zh": ["打开 iPhone / iPad 的「设置」", "点击顶部的姓名", "「订阅」", "选择项目并「取消订阅」"]
+        "ja": [
+          "iPhone / iPad の「設定」を開く",
+          "最上部の自分の名前をタップ",
+          "「サブスクリプション」",
+          "対象を選んで「サブスクリプションをキャンセル」"
+        ],
+        "en": [
+          "Open Settings on your iPhone / iPad",
+          "Tap your name at the top",
+          "Subscriptions",
+          "Select the item and Cancel Subscription"
+        ],
+        "zh": [
+          "打开 iPhone / iPad 的「设置」",
+          "点击顶部的姓名",
+          "「订阅」",
+          "选择项目并「取消订阅」"
+        ]
       },
-      "keywords": ["apple", "app store", "itunes", "apple one"],
+      "keywords": [
+        "apple",
+        "app store",
+        "itunes",
+        "apple one"
+      ],
       "icon": "apple",
       "verified": false,
       "last_checked": null,
@@ -287,34 +563,80 @@
     },
     {
       "id": "notion",
-      "names": { "en": "Notion", "ja": "Notion", "zh": "Notion" },
-      "regions": ["GLOBAL"],
+      "names": {
+        "en": "Notion",
+        "ja": "Notion",
+        "zh": "Notion"
+      },
+      "regions": [
+        "GLOBAL"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "ja": ["Notion を開く", "「設定」→「請求」", "プランのダウングレード / キャンセル"],
-        "en": ["Open Notion", "Settings → Billing", "Downgrade or cancel the plan"],
-        "zh": ["打开 Notion", "「设置」→「账单」", "降级或取消套餐"]
+        "ja": [
+          "Notion を開く",
+          "「設定」→「請求」",
+          "プランのダウングレード / キャンセル"
+        ],
+        "en": [
+          "Open Notion",
+          "Settings → Billing",
+          "Downgrade or cancel the plan"
+        ],
+        "zh": [
+          "打开 Notion",
+          "「设置」→「账单」",
+          "降级或取消套餐"
+        ]
       },
-      "keywords": ["notion"],
+      "keywords": [
+        "notion"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
       "notes": "ワークスペース単位の課金。直行URLの有無を要調査。"
     },
-
     {
       "id": "bilibili_vip",
-      "names": { "en": "Bilibili Premium", "ja": "bilibili 大会員", "zh": "哔哩哔哩大会员" },
-      "regions": ["CN"],
+      "names": {
+        "en": "Bilibili Premium",
+        "ja": "bilibili 大会員",
+        "zh": "哔哩哔哩大会员"
+      },
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开哔哩哔哩 App", "「我的」→「大会员」", "进入「自动续费管理」", "关闭自动续费"],
-        "ja": ["bilibili アプリを開く", "「マイページ」→「大会員」", "「自動更新の管理」へ", "自動更新をオフにする"],
-        "en": ["Open the Bilibili app", "Me → Premium", "Auto-renewal management", "Turn off auto-renewal"]
+        "zh": [
+          "打开哔哩哔哩 App",
+          "「我的」→「大会员」",
+          "进入「自动续费管理」",
+          "关闭自动续费"
+        ],
+        "ja": [
+          "bilibili アプリを開く",
+          "「マイページ」→「大会員」",
+          "「自動更新の管理」へ",
+          "自動更新をオフにする"
+        ],
+        "en": [
+          "Open the Bilibili app",
+          "Me → Premium",
+          "Auto-renewal management",
+          "Turn off auto-renewal"
+        ]
       },
-      "keywords": ["哔哩哔哩", "bilibili", "b站", "大会员", "ビリビリ"],
+      "keywords": [
+        "哔哩哔哩",
+        "bilibili",
+        "b站",
+        "大会员",
+        "ビリビリ"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -322,16 +644,41 @@
     },
     {
       "id": "iqiyi_vip",
-      "names": { "en": "iQIYI VIP", "ja": "愛奇芸 VIP", "zh": "爱奇艺 VIP会员" },
-      "regions": ["CN"],
+      "names": {
+        "en": "iQIYI VIP",
+        "ja": "愛奇芸 VIP",
+        "zh": "爱奇艺 VIP会员"
+      },
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开爱奇艺 App", "「我的」→「VIP会员」", "「自动续费管理」", "关闭自动续费"],
-        "ja": ["愛奇芸アプリを開く", "「マイページ」→「VIP会員」", "「自動更新の管理」", "自動更新をオフにする"],
-        "en": ["Open the iQIYI app", "Me → VIP", "Auto-renewal management", "Turn off auto-renewal"]
+        "zh": [
+          "打开爱奇艺 App",
+          "「我的」→「VIP会员」",
+          "「自动续费管理」",
+          "关闭自动续费"
+        ],
+        "ja": [
+          "愛奇芸アプリを開く",
+          "「マイページ」→「VIP会員」",
+          "「自動更新の管理」",
+          "自動更新をオフにする"
+        ],
+        "en": [
+          "Open the iQIYI app",
+          "Me → VIP",
+          "Auto-renewal management",
+          "Turn off auto-renewal"
+        ]
       },
-      "keywords": ["爱奇艺", "愛奇藝", "iqiyi"],
+      "keywords": [
+        "爱奇艺",
+        "愛奇藝",
+        "iqiyi"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -339,16 +686,41 @@
     },
     {
       "id": "tencent_video_vip",
-      "names": { "en": "Tencent Video VIP", "ja": "騰訊視頻 VIP", "zh": "腾讯视频 VIP" },
-      "regions": ["CN"],
+      "names": {
+        "en": "Tencent Video VIP",
+        "ja": "騰訊視頻 VIP",
+        "zh": "腾讯视频 VIP"
+      },
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开腾讯视频 App", "「个人中心」→「我的VIP」", "「连续包月管理」", "取消自动续费"],
-        "ja": ["騰訊視頻アプリを開く", "「マイページ」→「My VIP」", "「月額自動更新の管理」", "自動更新を解除する"],
-        "en": ["Open the Tencent Video app", "Profile → My VIP", "Monthly auto-renewal management", "Cancel auto-renewal"]
+        "zh": [
+          "打开腾讯视频 App",
+          "「个人中心」→「我的VIP」",
+          "「连续包月管理」",
+          "取消自动续费"
+        ],
+        "ja": [
+          "騰訊視頻アプリを開く",
+          "「マイページ」→「My VIP」",
+          "「月額自動更新の管理」",
+          "自動更新を解除する"
+        ],
+        "en": [
+          "Open the Tencent Video app",
+          "Profile → My VIP",
+          "Monthly auto-renewal management",
+          "Cancel auto-renewal"
+        ]
       },
-      "keywords": ["腾讯视频", "騰訊視頻", "tencent video"],
+      "keywords": [
+        "腾讯视频",
+        "騰訊視頻",
+        "tencent video"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -356,16 +728,41 @@
     },
     {
       "id": "youku_vip",
-      "names": { "en": "Youku VIP", "ja": "優酷 VIP", "zh": "优酷 VIP会员" },
-      "regions": ["CN"],
+      "names": {
+        "en": "Youku VIP",
+        "ja": "優酷 VIP",
+        "zh": "优酷 VIP会员"
+      },
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开优酷 App", "「我的」→「VIP会员」", "「自动续费管理」", "关闭自动续费"],
-        "ja": ["優酷アプリを開く", "「マイページ」→「VIP会員」", "「自動更新の管理」", "自動更新をオフにする"],
-        "en": ["Open the Youku app", "Me → VIP", "Auto-renewal management", "Turn off auto-renewal"]
+        "zh": [
+          "打开优酷 App",
+          "「我的」→「VIP会员」",
+          "「自动续费管理」",
+          "关闭自动续费"
+        ],
+        "ja": [
+          "優酷アプリを開く",
+          "「マイページ」→「VIP会員」",
+          "「自動更新の管理」",
+          "自動更新をオフにする"
+        ],
+        "en": [
+          "Open the Youku app",
+          "Me → VIP",
+          "Auto-renewal management",
+          "Turn off auto-renewal"
+        ]
       },
-      "keywords": ["优酷", "優酷", "youku"],
+      "keywords": [
+        "优酷",
+        "優酷",
+        "youku"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -373,16 +770,41 @@
     },
     {
       "id": "netease_music_vip",
-      "names": { "en": "NetEase Cloud Music VIP", "ja": "網易雲音楽 VIP", "zh": "网易云音乐 黑胶VIP" },
-      "regions": ["CN"],
+      "names": {
+        "en": "NetEase Cloud Music VIP",
+        "ja": "網易雲音楽 VIP",
+        "zh": "网易云音乐 黑胶VIP"
+      },
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开网易云音乐 App", "「我的」→「黑胶VIP」", "「自动续费管理」", "关闭自动续费"],
-        "ja": ["網易雲音楽アプリを開く", "「マイページ」→「黒膠VIP」", "「自動更新の管理」", "自動更新をオフにする"],
-        "en": ["Open NetEase Cloud Music", "Me → VIP", "Auto-renewal management", "Turn off auto-renewal"]
+        "zh": [
+          "打开网易云音乐 App",
+          "「我的」→「黑胶VIP」",
+          "「自动续费管理」",
+          "关闭自动续费"
+        ],
+        "ja": [
+          "網易雲音楽アプリを開く",
+          "「マイページ」→「黒膠VIP」",
+          "「自動更新の管理」",
+          "自動更新をオフにする"
+        ],
+        "en": [
+          "Open NetEase Cloud Music",
+          "Me → VIP",
+          "Auto-renewal management",
+          "Turn off auto-renewal"
+        ]
       },
-      "keywords": ["网易云音乐", "網易雲音樂", "netease music"],
+      "keywords": [
+        "网易云音乐",
+        "網易雲音樂",
+        "netease music"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -395,15 +817,38 @@
         "ja": "微信ペイの自動引き落とし",
         "zh": "微信支付 自动扣费"
       },
-      "regions": ["CN"],
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开微信", "「我」→「服务」→「钱包」", "「支付设置」→「自动续费」", "选择要解除的项目并关闭"],
-        "ja": ["微信を開く", "「マイページ」→「サービス」→「ウォレット」", "「支払い設定」→「自動更新」", "解除したい項目を選んでオフにする"],
-        "en": ["Open WeChat", "Me → Services → Wallet", "Payment Settings → Auto-renewal", "Select the item and turn it off"]
+        "zh": [
+          "打开微信",
+          "「我」→「服务」→「钱包」",
+          "「支付设置」→「自动续费」",
+          "选择要解除的项目并关闭"
+        ],
+        "ja": [
+          "微信を開く",
+          "「マイページ」→「サービス」→「ウォレット」",
+          "「支払い設定」→「自動更新」",
+          "解除したい項目を選んでオフにする"
+        ],
+        "en": [
+          "Open WeChat",
+          "Me → Services → Wallet",
+          "Payment Settings → Auto-renewal",
+          "Select the item and turn it off"
+        ]
       },
-      "keywords": ["微信", "微信支付", "wechat", "wechat pay", "自动扣费"],
+      "keywords": [
+        "微信",
+        "微信支付",
+        "wechat",
+        "wechat pay",
+        "自动扣费"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
@@ -416,190 +861,300 @@
         "ja": "支付宝の自動引き落とし",
         "zh": "支付宝 免密支付/自动扣款"
       },
-      "regions": ["CN"],
+      "regions": [
+        "CN"
+      ],
       "cancel_url": null,
       "cancel_url_overrides": {},
       "manual_steps": {
-        "zh": ["打开支付宝", "「我的」→ 右上角「设置」", "「支付设置」→「免密支付/自动扣款」", "选择要解除的项目并关闭"],
-        "ja": ["支付宝を開く", "「マイページ」→ 右上の「設定」", "「支払い設定」→「パスワードなし支払い/自動引き落とし」", "解除したい項目を選んでオフにする"],
-        "en": ["Open Alipay", "Me → Settings (top right)", "Payment Settings → Passcode-free / auto-deduction", "Select the item and turn it off"]
+        "zh": [
+          "打开支付宝",
+          "「我的」→ 右上角「设置」",
+          "「支付设置」→「免密支付/自动扣款」",
+          "选择要解除的项目并关闭"
+        ],
+        "ja": [
+          "支付宝を開く",
+          "「マイページ」→ 右上の「設定」",
+          "「支払い設定」→「パスワードなし支払い/自動引き落とし」",
+          "解除したい項目を選んでオフにする"
+        ],
+        "en": [
+          "Open Alipay",
+          "Me → Settings (top right)",
+          "Payment Settings → Passcode-free / auto-deduction",
+          "Select the item and turn it off"
+        ]
       },
-      "keywords": ["支付宝", "支付寶", "alipay", "免密支付", "自动扣款"],
+      "keywords": [
+        "支付宝",
+        "支付寶",
+        "alipay",
+        "免密支付",
+        "自动扣款"
+      ],
       "icon": null,
       "verified": false,
       "last_checked": null,
       "notes": "同上。決済側の解除であり、サービス側の解約と混同させないこと。"
     }
   ],
-
   "listener_packages": [
     {
       "package": "com.android.vending",
       "label": "Google Play",
-      "regions": ["GLOBAL"],
+      "regions": [
+        "GLOBAL"
+      ],
       "verified": false,
       "notes": "無料トライアル開始・定期購入の更新通知の主要な発生源。最優先。"
     },
     {
       "package": "com.paypal.android.p2pmobile",
       "label": "PayPal",
-      "regions": ["GLOBAL"],
+      "regions": [
+        "GLOBAL"
+      ],
       "verified": false,
       "notes": ""
     },
     {
       "package": "com.tencent.mm",
       "label": "WeChat",
-      "regions": ["CN"],
+      "regions": [
+        "CN"
+      ],
       "verified": false,
       "notes": "微信支付の扣費通知が対象。チャット通知と同一パッケージから来るため、パターンでの絞り込みが特に重要。"
     },
     {
       "package": "com.eg.android.AlipayGphone",
       "label": "Alipay",
-      "regions": ["CN"],
+      "regions": [
+        "CN"
+      ],
       "verified": false,
       "notes": ""
     }
   ],
-
   "_listener_packages_todo": [
     "日本のメガバンク・カード会社・キャリア決済アプリのパッケージ名を実機で確認して追加する",
     "英語圏の主要銀行アプリのパッケージ名を追加する",
     "パッケージ名は端末・アプリバージョンで変わることがあるため、必ず実機の adb shell dumpsys で確認する"
   ],
-
   "detection_patterns": [
     {
       "id": "play_trial_start_ja",
-      "locales": ["ja"],
-      "packages": ["com.android.vending"],
       "kind": "TRIAL_START",
-      "regex": "(?<service>.{1,40}?)\\s*の\\s*(?<trialDays>\\d{1,3})\\s*日間(?:の)?無料(?:体験|トライアル)",
-      "groups": { "service": "service", "trialDays": "trialDays" },
+      "locales": [
+        "ja"
+      ],
+      "packages": [
+        "com.android.vending"
+      ],
+      "regex": "(?<service>[^\\n。、]{1,40}?)\\s*の\\s*(?<trialDays>\\d{1,3})\\s*日間(?:の)?無料(?:体験|トライアル)",
       "confidence": 0.9,
-      "verified": false
+      "verified": false,
+      "notes": ""
     },
     {
       "id": "play_trial_start_en",
-      "locales": ["en"],
-      "packages": ["com.android.vending"],
       "kind": "TRIAL_START",
-      "regex": "(?<trialDays>\\d{1,3})[-\\s]day free trial(?:\\s+(?:of|for)\\s+(?<service>.{1,40}))?",
-      "groups": { "service": "service", "trialDays": "trialDays" },
+      "locales": [
+        "en"
+      ],
+      "packages": [
+        "com.android.vending"
+      ],
+      "regex": "(?<trialDays>\\d{1,3})[-\\s]day free trial(?:\\s+(?:of|for)\\s+(?<service>.+?))?(?=\\s+(?:has|have|is|was|will|begins?|starts?|ends?|now)\\b|[.,!;]|$)",
       "confidence": 0.85,
-      "verified": false
+      "verified": false,
+      "notes": "service の貪欲一致を先読みで打ち切っている。定型句を足す場合はこの先読みに追加する。"
     },
     {
       "id": "play_trial_start_zh",
-      "locales": ["zh"],
-      "packages": ["com.android.vending"],
       "kind": "TRIAL_START",
+      "locales": [
+        "zh"
+      ],
+      "packages": [
+        "com.android.vending"
+      ],
       "regex": "(?<trialDays>\\d{1,3})\\s*天免费试用",
-      "groups": { "trialDays": "trialDays" },
       "confidence": 0.85,
-      "verified": false
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "id": "trial_days_generic_ja",
+      "kind": "TRIAL_START",
+      "locales": [
+        "ja"
+      ],
+      "packages": [],
+      "regex": "(?<trialDays>\\d{1,3})\\s*日間(?:の)?無料",
+      "confidence": 0.65,
+      "verified": false,
+      "notes": "サービス名を取らない汎用版。パッケージ限定版が外れたときの受け皿。"
     },
     {
       "id": "first_month_free_ja",
-      "locales": ["ja"],
-      "packages": [],
       "kind": "TRIAL_START",
+      "locales": [
+        "ja"
+      ],
+      "packages": [],
       "regex": "初月無料|1\\s*(?:ヶ|か|ケ)月間?無料",
-      "groups": {},
+      "relative_months": 1,
       "confidence": 0.6,
       "verified": false,
-      "notes": "trialDays は取れない。1ヶ月後を LocalDate.plusMonths(1) で算出する。"
+      "notes": "日数ではなく月数。plusDays(30) ではなく plusMonths(1) で算出する。"
     },
     {
       "id": "first_month_free_en",
-      "locales": ["en"],
-      "packages": [],
       "kind": "TRIAL_START",
+      "locales": [
+        "en"
+      ],
+      "packages": [],
       "regex": "first month free|free for (?:the )?first month|1[-\\s]month free trial",
-      "groups": {},
+      "relative_months": 1,
       "confidence": 0.6,
       "verified": false,
       "notes": "同上。"
     },
     {
       "id": "first_month_free_zh",
-      "locales": ["zh"],
-      "packages": [],
       "kind": "TRIAL_START",
+      "locales": [
+        "zh"
+      ],
+      "packages": [],
       "regex": "首月免费|首月0元",
-      "groups": {},
+      "relative_months": 1,
       "confidence": 0.6,
       "verified": false,
       "notes": "同上。"
     },
     {
       "id": "renewal_notice_ja",
-      "locales": ["ja"],
-      "packages": [],
       "kind": "RENEWAL_NOTICE",
+      "locales": [
+        "ja"
+      ],
+      "packages": [],
       "regex": "(?<date>\\d{4}\\s*[/\\-年]\\s*\\d{1,2}\\s*[/\\-月]\\s*\\d{1,2}\\s*日?)[^\\n]{0,20}?(?:更新|自動更新|請求|課金)",
-      "groups": { "date": "date" },
       "confidence": 0.7,
-      "verified": false
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "id": "renewal_notice_en",
+      "kind": "RENEWAL_NOTICE",
+      "locales": [
+        "en"
+      ],
+      "packages": [],
+      "regex": "(?:renews?|renewal|will be charged|next billing|billing date)[^\\n]{0,30}?(?<date>(?:\\d{4}[-/]\\d{1,2}[-/]\\d{1,2})|(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\\.?\\s+\\d{1,2}(?:,\\s*\\d{4})?)",
+      "confidence": 0.7,
+      "verified": false,
+      "notes": ""
     },
     {
       "id": "renewal_notice_zh",
-      "locales": ["zh"],
-      "packages": [],
       "kind": "RENEWAL_NOTICE",
+      "locales": [
+        "zh"
+      ],
+      "packages": [],
       "regex": "(?<date>\\d{4}\\s*[\\-/年]\\s*\\d{1,2}\\s*[\\-/月]\\s*\\d{1,2}\\s*日?)[^\\n]{0,20}?(?:续费|扣费|自动续订)",
-      "groups": { "date": "date" },
       "confidence": 0.7,
-      "verified": false
+      "verified": false,
+      "notes": ""
     },
     {
-      "id": "amount_jpy",
-      "locales": ["ja"],
-      "packages": [],
+      "id": "amount_jpy_suffix",
       "kind": "AMOUNT",
-      "regex": "(?:(?<sym>[¥￥])\\s*(?<a1>[\\d,]+)|(?<a2>[\\d,]+)\\s*円)",
-      "groups": { "amount": "a1", "amountAlt": "a2" },
+      "locales": [],
+      "packages": [],
+      "currency": "JPY",
+      "regex": "(?<amount>[\\d,]+)\\s*円",
       "confidence": 0.9,
       "verified": false,
-      "notes": "¥ 単独は CNY の可能性があるため、円/JPY/ロケールで確定させること。"
+      "notes": "通貨トークン自体が通貨を確定させるため、端末の言語では絞らない。"
     },
     {
-      "id": "amount_usd",
-      "locales": ["en"],
-      "packages": [],
+      "id": "amount_jpy_iso",
       "kind": "AMOUNT",
-      "regex": "(?:US)?\\$\\s*(?<amount>[\\d,]+(?:\\.\\d{2})?)|USD\\s*(?<amountAlt>[\\d,]+(?:\\.\\d{2})?)",
-      "groups": { "amount": "amount", "amountAlt": "amountAlt" },
+      "locales": [],
+      "packages": [],
+      "currency": "JPY",
+      "regex": "JPY\\s*(?<amount>[\\d,]+)",
       "confidence": 0.9,
-      "verified": false
-    },
-    {
-      "id": "amount_cny",
-      "locales": ["zh"],
-      "packages": [],
-      "kind": "AMOUNT",
-      "regex": "(?:(?<a1>[\\d,]+(?:\\.\\d{1,2})?)\\s*元|[¥￥]\\s*(?<a2>[\\d,]+(?:\\.\\d{1,2})?)|CNY\\s*(?<a3>[\\d,]+(?:\\.\\d{1,2})?))",
-      "groups": { "amount": "a1", "amountAlt": "a2", "amountAlt2": "a3" },
-      "confidence": 0.9,
-      "verified": false
-    },
-    {
-      "id": "free_zero_multi",
-      "locales": ["ja", "en", "zh"],
-      "packages": [],
-      "kind": "AMOUNT",
-      "regex": "無料|0\\s*円|\\bfree\\b|\\$0(?:\\.00)?|免费|0\\s*元",
-      "groups": {},
-      "confidence": 0.5,
       "verified": false,
-      "notes": "金額ゼロ。Money(0, ロケール既定通貨) として扱う。"
+      "notes": ""
+    },
+    {
+      "id": "amount_cny_suffix",
+      "kind": "AMOUNT",
+      "locales": [],
+      "packages": [],
+      "currency": "CNY",
+      "regex": "(?<amount>[\\d,]+(?:\\.\\d{1,2})?)\\s*元",
+      "confidence": 0.9,
+      "verified": false,
+      "notes": "通貨トークン自体が通貨を確定させるため、端末の言語では絞らない。"
+    },
+    {
+      "id": "amount_cny_iso",
+      "kind": "AMOUNT",
+      "locales": [],
+      "packages": [],
+      "currency": "CNY",
+      "regex": "(?:CNY|RMB)\\s*(?<amount>[\\d,]+(?:\\.\\d{1,2})?)",
+      "confidence": 0.9,
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "id": "amount_usd_symbol",
+      "kind": "AMOUNT",
+      "locales": [],
+      "packages": [],
+      "currency": "USD",
+      "regex": "(?:US)?\\$\\s*(?<amount>[\\d,]+(?:\\.\\d{2})?)",
+      "confidence": 0.9,
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "id": "amount_usd_iso",
+      "kind": "AMOUNT",
+      "locales": [],
+      "packages": [],
+      "currency": "USD",
+      "regex": "USD\\s*(?<amount>[\\d,]+(?:\\.\\d{2})?)",
+      "confidence": 0.9,
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "id": "amount_yen_symbol",
+      "kind": "AMOUNT",
+      "locales": [],
+      "packages": [],
+      "currency": "JPY",
+      "ambiguous_symbol": true,
+      "regex": "[¥￥]\\s*(?<amount>[\\d,]+(?:\\.\\d{1,2})?)",
+      "confidence": 0.7,
+      "verified": false,
+      "notes": "¥ は JPY と CNY の両方で使われる。currency は暫定値で、AmountParser が文脈から確定させる。"
     }
   ],
-
   "_detection_patterns_todo": [
-    "全パターンが未検証。実機で各アプリの通知を受信し、実際のテキストに対して一致するか確認すること",
-    "確認したテキストは app/src/test/resources/detection/<locale>/ に fixture として保存し、回帰テストにする",
-    "『一致してはいけない』通知（発送通知・ニュース等）も fixture に入れること"
+    "全パターンが実機の通知に対して未検証。実際のテキストで一致するか確認すること",
+    "確認したテキストは core/detection/src/test/resources/corpus/ に fixture として追加する",
+    "『一致してはいけない』通知（発送通知・ニュース等）も negative fixture に入れること",
+    "金額ゼロ（無料）を表す AMOUNT パターンは意図的に置いていない。トライアル中かどうかは isTrial で表す"
   ]
 }
