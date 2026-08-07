@@ -30,7 +30,9 @@
 > 詳細と、ローカルでビルドを通すための手順は
 > [docs/build-verification.md](docs/build-verification.md) を参照。
 
-- **UI モックアップ（8画面・レンダリング済み）**:
+- **UI 確定仕様（操作できるプロトタイプ＋テスト仕様）**:
+  https://claude.ai/code/artifact/aa1acf63-f2dc-4b74-94bb-e18eb468bce5
+- ビジュアル方向性の初期モック（参考）:
   https://claude.ai/code/artifact/751ba2ad-b7d4-45d7-b4cb-2acd229bf41a
 
 ---
@@ -39,6 +41,7 @@
 
 | ドキュメント | 内容 |
 |---|---|
+| [docs/ui-spec.md](docs/ui-spec.md) | **UI 確定仕様とテスト方針**（testTag 規約・描画状態・イベント一覧） |
 | [docs/architecture.md](docs/architecture.md) | レイヤ構成、DI、依存バージョン、画面遷移 |
 | [docs/data-model.md](docs/data-model.md) | Room スキーマ、暗号化、マイグレーション方針 |
 | [docs/notification-detection.md](docs/notification-detection.md) | `NotificationListenerService` と正規表現抽出エンジン |
