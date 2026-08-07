@@ -20,7 +20,3 @@ google-services.json
 # OS
 .DS_Store
 Thumbs.db
-
-# Gradle wrapper jar is not committed here — generate with `gradle wrapper`
-# (the environment used for design had no network access to services.gradle.org
-#  for the wrapper distribution; see docs/build-verification.md)

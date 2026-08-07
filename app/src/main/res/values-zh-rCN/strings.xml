@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_listener_label">SubGuard 订阅检测</string>
+
+    <string name="channel_reminder_urgent_name">紧急提醒</string>
+    <string name="channel_reminder_urgent_desc">在开始扣费的 3 小时前通知您。</string>
+    <string name="channel_reminder_normal_name">提醒</string>
+    <string name="channel_reminder_normal_desc">在开始扣费的 24 小时前通知您。</string>
+    <string name="channel_detection_name">检测到的订阅</string>
+    <string name="channel_detection_desc">从通知中发现新订阅时告知您。</string>
+    <string name="channel_service_status_name">应用状态</string>
+    <string name="channel_service_status_desc">当 SubGuard 无法检测订阅时提醒您。</string>
+
+    <string name="reminder_title_hours">%2$d 小时后 %1$s 开始扣费</string>
+    <string name="reminder_title_tomorrow">明天 %1$s 开始扣费</string>
+    <string name="reminder_body">将扣费 %1$s。</string>
+    <string name="reminder_public_title">取消订阅的截止时间快到了</string>
+
+    <string name="action_open_cancel_page">打开取消页面</string>
+    <string name="action_keep_subscription">继续订阅</string>
+
+    <string name="detection_title">检测到 %1$s 的订阅</string>
+    <string name="detection_body">点击查看详情并保存。</string>
+    <string name="detection_unknown_service">某项服务</string>
+
+    <string name="cancel_url_copied">未找到浏览器。已将取消页面的链接复制到剪贴板。</string>
+
+    <string name="cancel_disclaimer">将打开 %1$s 的官方网站。取消手续需要您自行完成。</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose がテーマを持つため、ここは起動時のウィンドウ背景だけを担う。 -->
+    <style name="Theme.SubGuard" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

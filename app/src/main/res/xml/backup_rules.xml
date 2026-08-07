@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 11 以前向けのバックアップ設定。
+  manifest で allowBackup="false" にしてあるので実際には使われないが、
+  設定を後から有効化したときに既定で全部入りにならないよう、除外を明示しておく。
+-->
+<full-backup-content>
+    <exclude domain="database" path="." />
+    <exclude domain="sharedpref" path="." />
+    <exclude domain="file" path="." />
+</full-backup-content>

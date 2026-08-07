@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  デフォルト（英語）。未対応ロケールの端末ではこれが使われる。
+
+  規律:
+   - 通貨記号を埋め込まない。%1$s には Money.format(locale) の結果が入る。
+   - 日付形式を書かない。DateTimeFormatter.ofLocalizedDateTime に任せる。
+   - 「自動で解約」を示唆する表現を使わない（docs/policy-compliance.md）。
+-->
+<resources>
+    <string name="app_name">SubGuard</string>
+    <string name="notification_listener_label">SubGuard subscription detection</string>
+
+    <!-- Notification channels -->
+    <string name="channel_reminder_urgent_name">Urgent reminders</string>
+    <string name="channel_reminder_urgent_desc">Sent 3 hours before billing starts.</string>
+    <string name="channel_reminder_normal_name">Reminders</string>
+    <string name="channel_reminder_normal_desc">Sent 24 hours before billing starts.</string>
+    <string name="channel_detection_name">Detected subscriptions</string>
+    <string name="channel_detection_desc">Sent when a new subscription is found in your notifications.</string>
+    <string name="channel_service_status_name">App status</string>
+    <string name="channel_service_status_desc">Warns you when SubGuard cannot detect subscriptions.</string>
+
+    <!-- Reminder notification -->
+    <string name="reminder_title_hours">%1$s starts billing in %2$d hours</string>
+    <string name="reminder_title_tomorrow">%1$s starts billing tomorrow</string>
+    <string name="reminder_body">You will be charged %1$s.</string>
+    <string name="reminder_public_title">A cancellation deadline is coming up</string>
+
+    <string name="action_open_cancel_page">Open cancellation page</string>
+    <string name="action_keep_subscription">Keep it</string>
+
+    <!-- Detection notification -->
+    <string name="detection_title">%1$s looks like a new subscription</string>
+    <string name="detection_body">Tap to check the details and save it.</string>
+    <string name="detection_unknown_service">A service</string>
+
+    <!-- Cancellation navigation -->
+    <string name="cancel_url_copied">No browser found. The cancellation link was copied to your clipboard.</string>
+
+    <!--
+      主ボタンの下に必ず出す一文。ストアポリシー対策であると同時に、
+      「押したら解約されると思った」という誤解を防ぐ UX でもある。
+    -->
+    <string name="cancel_disclaimer">The official site for %1$s will open. You need to complete the cancellation yourself.</string>
+</resources>

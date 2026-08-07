@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12+ のバックアップ／端末間転送の対象を制御する。
+
+  暗号化 DB のパスフレーズは Android Keystore にあり端末をまたげないため、
+  DB ファイルだけをコピーしても復号できない。中途半端に転送されるより、
+  何も転送しないほうが安全かつ挙動が明確。
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="file" />
+        <exclude domain="external" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="file" />
+        <exclude domain="external" />
+    </device-transfer>
+</data-extraction-rules>

@@ -14,10 +14,21 @@
 
 ## 現在のステータス
 
-**設計フェーズ。実装コードはまだ存在しない。**
+**Phase 1（検知エンジンとデータ層）まで実装済み。UI と課金は未着手。**
 
-このリポジトリには現在、実装に着手するための設計ドキュメントと解約URLデータベースのみが入っている。
-Phase 1 の実装は、[docs/roadmap.md](docs/roadmap.md) のタスク分解から着手する。
+| モジュール | 状態 | 検証 |
+|---|---|---|
+| `:core:detection` | 実装済み | ✅ **69 テスト通過**（`gradle :core:detection:test`） |
+| `:app` データ層（Room / 同期 / 通知検知 / WorkManager） | 実装済み | ⚠️ **未ビルド**（下記） |
+| `:app` UI（Compose） | 未着手（Phase 2） | — |
+| 課金（Play Billing） | 未着手（Phase 3） | — |
+
+> ⚠️ **`:app` はまだ一度もビルドされていない。**
+> 設計・実装を行った環境から Google のホスト（`dl.google.com` / `maven.google.com`）に
+> 到達できず、Android SDK も AndroidX の依存解決も不可能だった。
+> `:core:detection` は Maven Central だけで完結するため実際にテストを通してある。
+> 詳細と、ローカルでビルドを通すための手順は
+> [docs/build-verification.md](docs/build-verification.md) を参照。
 
 - **UI モックアップ（8画面・レンダリング済み）**:
   https://claude.ai/code/artifact/751ba2ad-b7d4-45d7-b4cb-2acd229bf41a
@@ -76,8 +87,26 @@ Phase 1 の実装は、[docs/roadmap.md](docs/roadmap.md) のタスク分解か�
 ```bash
 git clone https://github.com/aiko-obara/subscCheck.git
 cd subscCheck
-# Phase 1 着手時に Gradle プロジェクトを生成する
+
+# 検知エンジンのテスト（Android SDK 不要。Maven Central だけで動く）
+./gradlew :core:detection:test
+
+# アプリ本体（Android SDK と Google Maven への到達が必要）
+./gradlew :app:assembleDebug
 ```
+
+### モジュール構成
+
+```
+:core:detection   Android 非依存の検知エンジン。JVM テストで回帰を担保する
+:app              Android アプリ本体
+data/             解約URL・検知パターンのマスタ（唯一の情報源）
+```
+
+`data/cancel_urls.json` は 1 ファイルで 2 箇所に配られる ——
+`:core:detection` のテストリソースと、`:app` の assets。
+テスト用のコピーを別に持たないことで、「パターンを直したのにテストは古いコピーを見ていた」
+という事故を防いでいる。
 
 > ⚠️ 依存ライブラリのバージョンは **まだ実機ビルドで検証されていない**。
 > 最初にプロジェクトを作る際は [docs/build-verification.md](docs/build-verification.md) の

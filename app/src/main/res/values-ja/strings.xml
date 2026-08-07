@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_listener_label">SubGuard サブスク検知</string>
+
+    <string name="channel_reminder_urgent_name">緊急リマインダー</string>
+    <string name="channel_reminder_urgent_desc">課金開始の3時間前にお知らせします。</string>
+    <string name="channel_reminder_normal_name">リマインダー</string>
+    <string name="channel_reminder_normal_desc">課金開始の24時間前にお知らせします。</string>
+    <string name="channel_detection_name">検知したサブスク</string>
+    <string name="channel_detection_desc">通知から新しいサブスクが見つかったときにお知らせします。</string>
+    <string name="channel_service_status_name">アプリの状態</string>
+    <string name="channel_service_status_desc">サブスクを検知できない状態になったときにお知らせします。</string>
+
+    <string name="reminder_title_hours">あと%2$d時間で %1$s の課金が始まります</string>
+    <string name="reminder_title_tomorrow">明日 %1$s の課金が始まります</string>
+    <string name="reminder_body">%1$s が請求されます。</string>
+    <string name="reminder_public_title">解約期限が近づいています</string>
+
+    <string name="action_open_cancel_page">解約ページへ</string>
+    <string name="action_keep_subscription">継続する</string>
+
+    <string name="detection_title">%1$s の登録を検知しました</string>
+    <string name="detection_body">タップして内容を確認し、登録してください。</string>
+    <string name="detection_unknown_service">サービス</string>
+
+    <string name="cancel_url_copied">ブラウザが見つかりませんでした。解約ページのリンクをコピーしました。</string>
+
+    <string name="cancel_disclaimer">%1$s の公式サイトが開きます。解約手続きはご自身で行ってください。</string>
+</resources>

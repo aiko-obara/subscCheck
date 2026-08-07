@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      権限は最小限にとどめる。「あると便利」で足さない。
+      SCHEDULE_EXACT_ALARM / REQUEST_IGNORE_BATTERY_OPTIMIZATIONS / QUERY_ALL_PACKAGES は
+      いずれも Play の制限対象であり、意図的に使っていない。
+      詳細は docs/policy-compliance.md を参照。
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".SubGuardApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SubGuard"
+
+        tools:targetApi="34"
+
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:allowBackup="false">
+        <!--
+          allowBackup を明示的に無効化している。
+          既定値 true のままだと、暗号化された DB ファイルが自動バックアップに乗る一方、
+          復号パスフレーズは Android Keystore にあり端末をまたげない。結果として
+          「復元しても開けない DB」がユーザーの手元に残る。
+        -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SubGuard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+          通知検知の本体。
+          exported="false" だが、システムがバインドするため android:permission が必須。
+        -->
+        <service
+            android:name=".data.notification.SubGuardNotificationListener"
+            android:exported="false"
+            android:label="@string/notification_listener_label"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- 通知アクションの受け口。UI を挟まずに解約ページを開くため。 -->
+        <receiver
+            android:name=".data.notification.ReminderActionReceiver"
+            android:exported="false" />
+
+        <!--
+          WorkManager の自動初期化を無効化する。
+          Hilt の HiltWorkerFactory を使うため、Application 側で
+          Configuration.Provider として自前で初期化する。
+          これを消し忘れると、Worker への注入が実行時にクラッシュする定番の罠。
+        -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"
+                tools:node="remove" />
+        </provider>
+    </application>
+</manifest>
